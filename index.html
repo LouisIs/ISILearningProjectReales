@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation for E-Learning ASP.NET MVC</title>
+    <link href="assets/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="assets/w3css.css" rel="stylesheet"> -->
+    <link href="assets/customStyle.css" rel="stylesheet">
+    <script src="assets/jquery-3.3.1.js"></script>
+    <script src="assets/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" /> <!--browser's tab icon-->
+	<style>
+	.background-indigo{
+		background-color: #593fc8;
+	}
+	.w3-bar-item{
+		font-size:15px;
+	}
+	.text-indigo{
+	color: #593fc8;
+	}
+	.w3-xxxxlarge{
+	font-size:55px;
+	}
+	a{
+	color: #50bba1;
+	}
+	 a:hover {
+        color: #2f2266;
+       
+    }
+	.desc-text{
+	font-size:17px;
+	}
+	.bolder{
+	font-weight: bolder;
+	}
+	.row{
+	margin:0px;
+	}
+	.small-padding-top-bottom{
+	padding-top:8px;
+	padding-bottom:8px;
+	}
+	hr{
+		width:50px;
+		border:5px solid #593fc8;
+	}
+	</style>
+    <script>
+      // Script to open and close sidebar
+		function w3_open() {
+		  document.getElementById("mySidebar").style.display = "block";
+		  document.getElementById("myOverlay").style.display = "block";
+		}
+		 
+		function w3_close() {
+		  document.getElementById("mySidebar").style.display = "none";
+		  document.getElementById("myOverlay").style.display = "none";
+		}
+
+		// Modal Image Gallery
+		function onClick(element) {
+		  document.getElementById("img01").src = element.src;
+		  document.getElementById("modal01").style.display = "block";
+		  var captionText = document.getElementById("caption");
+		  captionText.innerHTML = element.alt;
+		}
+		function openSetupChoice(choice) {
+		  var i;
+		  var x = document.getElementsByClassName("choice");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  document.getElementById(choice).style.display = "block";  
+		}
+    </script>
+</head>
+<body>
+
+    <!-- Sidebar/menu -->
+<nav class="w3-sidebar background-indigo w3-text-white w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container" style="background-color:transparent">
+    <h3 class="w3-padding-64"><b>Aquilla & Priscilla</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#introduction" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
+    <a href="#features" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Features</a> 
+    <a href="#requirement" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Requirement</a> 
+
+    <a href="#videodemo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Video Demo</a> 
+
+  </div>
+</nav>
+
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Aquilla & Priscilla</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="introduction">
+    <h1 class="w3-xxxxlarge"><b>E-Learning ASP.NET MVC Documentation</b></h1>
+    <h1 class="w3-xxxlarge text-indigo"><b>Introduction.</b></h1>
+    <hr class="w3-round">
+  </div>
+  
+  <div class="w3-container w3-text-black desc-text">
+  	Hi there! Thank you for buying E-Learning- Learning Management System (ASP.NET MVC). For any support inquiries, feel free to contact  
+	call, text or WhatsApp me
+	(<a href="https://wa.me/6466438175" target="_blank" style="text-decoration:underline">6466438175</a>). My name is Rabaswende Israel
+	Sometimes my phone is charging or the notification system of my phone is not functioning, so kindly email me through
+	<a href="mailto:louisyvanisrael@gmail.com? subject=Elearning Website Solution" style="text-decoration:underline" target="_blank">this Email form</a> 
+	if I haven't reply WhatsApp after a long time. So sorry for inconvenience. Basically, I will reply messages within 2 business days. Thank you.
+		
+    Thank you so much and Much appreatiate your help. You could also email me for next update suggestion. I will always welcome
+	user's suggestion and keep improving this project to enhance user experience. Once again thanks for purchasing this project.
+	<div class="small-padding-top-bottom">
+		<h4 class="bolder">Product Detail</h4>
+		<ul>
+			<li>
+				<b>Name:</b> E-Learning- Learning Management System (ASP.NET MVC)
+			</li>
+			<li>
+				<b>Version:</b> V1.2
+			</li>
+		</ul>
+	</div>
+	<div>
+		<h4 class="bolder">Aquilla & Priscilla Social Media:</h4>
+		<ol>
+			<li>
+				<i class="fa fa-envelope"></i> <a href="mailto:louisyvanisrael@gmail.com? subject=Elearning Website Solution">Louisyvan0@gmail.com</a>
+			</li>									
+			<li>
+				<i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/traore-rabaswende-bb9903222/" target="_blank">linkedin</a>
+			</li>
+			<li>
+				<i class="fa fa-whatsapp"></i> <a href="https://wa.me/6466438175" target="_blank">My WhatsApp</a>
+			</li>
+		</ol>	
+	</div>	
+	
+  </div>
+  
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+  <div class="w3-container w3-text-black" id="features" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-indigo"><b>Features.</b></h1>
+    <hr class="w3-round">
+	<p class="desc-text w3-text-black">
+	<p class="text-justify">
+	This project aims to help the school, university, tuition centre, private organization to perform
+ online learning which let the teachers/instructors and students to perform some common class activities
+ online. Instructors and students have to register themselves and wait for the admin to approve their
+ registration request in order to login to the portal. When the admin approves or rejects the request,
+ the instructor/student will receive an email notification. Then, they can login to the portal. Instructors
+ can upload reading materials in the form of documents (ppt,doc,txt,excel,csv), videos, audios, texts, and
+ links. Students can download the reading materials for each chapter. Instructors can also give assignments
+ to their students and the students can submit the assignments. There is also an interesting quiz game section
+ where instructors can create for the students to play. The quiz game has  correct/wrong sound effects and
+ the questions can be randomized. Instructors and students can also create discussion threads in a course channel to have discussion together.
+	</p>
+		<p><strong>Admins can:</strong></p>
+<ul>
+<li>Admin Login</li>
+<li>Approve / reject user's registration request</li>
+<li>If an instructor/student has left the school, if admin still need to keep their data for some years, 
+admin can Disable the user from login to the portal first, then only delete their data when needed.</li>
+<li>Edit a user's detail</li>
+<li>Help a user to reset password</li>
+<li>Make announcement for the all the users to see</li>
+<li>Setting (Change background color- light theme or dark theme according to his/her preferences.</li>
+<li>View Profile</li>
+<li>Edit Profile</li>
+<li>Change Password</li>
+</ul>
+
+
+<p><strong>Instructors can:</strong></p>
+<ul>
+<li>Register and wait for approval</li>
+<li>Login</li>
+<li>Dashboard</li>
+<li>View announcement made by admin</li>
+<li>Create course channel, change cover image for a course channel</li>
+<li>Manage Chapters and upload reading materials for each chapter</li>
+<li>[Announcement] Manage announcement for a course channel</li>
+<li>[Assignment] Give assignments, receive submission, give marks and comment</li>
+<li>[Quiz] Create quiz game for the students, view student's result</li>
+<li>Share enroll link to the students</li>
+<li>Unenroll a student from his/her course</li>
+<li>[Discussion] Create discussion thread</li>
+<li>Setting (Change background color- light theme or dark theme according to his/her preferences.</li>
+<li>View Profile</li>
+<li>Edit Profile</li>
+<li>Change Password</li>
+</ul>
+
+<p><strong>Students can:</strong></p>
+<ul>
+<li>Register and wait for approval</li>
+<li>Login</li>
+<li>Dashboard</li>
+<li>Search and enroll into a course channel</li>
+<li>Downlaod reading materials in a course channel</li>
+<li>View announcement made by admin and instructors</li>
+<li>[Assignment] View assignments, submit assignments, view instructor's grade and comments</li>
+<li>[Quiz] Play quiz game</li>
+<li>Unenroll from a course channel</li>
+<li>[Discussion] Create discussion thread</li>
+<li>Setting (Change background color- light theme or dark theme according to his/her preferences.</li>
+<li>View Profile</li>
+<li>Edit Profile</li>
+<li>Change Password</li>
+</ul>
+		</p>
+	</div>
+
+ 
+  <div class="w3-container w3-text-black" id="requirement" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-indigo"><b>Requirement.</b></h1>
+    <hr class="w3-round">
+	<p class="desc-text w3-text-black">
+		Download, install, get ready with the following softwares or accounts:
+		<ul class="desc-text">
+			<li>
+				<b><span class="label label-success">Required</span> Source Code Editing Software: </b>Microsoft Visual Studio Community 2017+ (You can download <a href="https://visualstudio.microsoft.com/downloads/" target="_blank">here</a>)
+				<ul>
+					<li style="list-style:circle">
+						When running the installer, during select workloads section, select <i>Asp.Net and web development</i> and <i>.NET desktop development</i>.
+					</li>
+				</ul>
+			</li>
+			
+			<li>
+				<b><span class="label label-success">Required</span> Gmail Account</b> (To be used to send out reset password email, you can create an account <a href="https://accounts.google.com/signup" target="_blank">here</a>)
+			</li>
+			
+			<li>
+				<b><span class="label label-warning">Optional</span> Hosting: </b>Windows hosting service provider. 
+				<span class="w3-text-indigo">This is required if you want to publish and host the application so that everyone can access. It is optional if you just want to test and run 
+				on your local computer, which can just be done by using Visual Studio.</span>
+				(For hosting server, Please make sure that the hosting service provider support Asp.Net MVC 5 web application,
+				Don't have any idea? You may try <a href="https://www.mywindowshosting.com/index?r=100986879" target="_blank">myWindowsHosting.com</a>.
+				Note that free trial plan of <a href="https://www.mywindowshosting.com/index?r=100986879" target="_blank">myWindowsHosting.com</a> 
+				do not support SMTP. This means that sending reset password email function would not work with the free trial plan.)
+			</li>
+
+			<li>
+				<b><span class="label label-warning">Optional</span> Database Management: </b>Microsoft SQL Server Management Studio
+				(You can download from <a href="https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017" target="_blank">here</a>)
+				<span class="w3-text-indigo">This is required if you want to publish and host the application so that everyone can access. It is optional if you just want to test and run 
+				on your local computer, which can just be done by using Visual Studio.</span>
+			</li>
+		</ul>
+		</p>
+	</div>
+  
+  
+
+
+  <div class="w3-container w3-text-black" id="videodemo" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-indigo"><b>Video Demo.</b></h1>
+    <hr class="w3-round">
+    <p>You may watch the videos below to see how the features inside work.</p>
+	<div class="row">
+		<h4>Instructor Panel</h4>
+		<iframe width="560" height="315" src="./assets/videos/Teacher.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div class="row">
+		<h4>Student Panel</h4>
+		<iframe width="560" height="315" src="./assets/videos/Student.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	</div>
+	<div class="row">
+		<h4>Admin Panel</h4>
+		<iframe width="560" height="315" src="./assets/videos/Admine.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	</div>
+  </div>
+
+
+	<div class="text-center w3-padding-64">
+
+		<div>
+			<a>
+				<img src="https://padlet-uploads.storage.googleapis.com/432143275/0b1f6c2491c6afcbeac374b26fa2c698/Thanks_for_purchasing.png" alt="thank" style="width:40%;">
+			</a>
+		</div>	
+	</div>
+	
+
+<!-- End page content -->
+</div>
+
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+<p class="w3-right">
+	<i class="fa fa-copyright"></i> Copyright 2020. Developed by <a href="https://www.linkedin.com/in/traore-rabaswende-bb9903222/" title=" R Louis Yvan Israel Traore From Aquilla & Priscilla"  
+	class="w3-hover-opacity">Aquilla & Priscilla</a>
+</p>
+</div>
+
+
+</body>
+</html>
